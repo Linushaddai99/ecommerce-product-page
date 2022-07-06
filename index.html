@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerc website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/489a84fc65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+           <div class="navbar--primary">
+                <div>
+                    <i class="fa-solid fa-bars hamburger-menu"></i>
+                    <div class="sidebar hide">
+                        <div class="sidebar__content">
+                            <ul class="sidebar__list">
+                                <i class="fa-solid fa-xmark sidebar-close"></i>
+                                <li class="sidebar__list__item"><a href="#" class="sidebar__link">Collection</a></li>
+                                <li class="sidebar__list__item"><a href="#" class="sidebar__link">Men</a></li>
+                                <li class="sidebar__list__item"><a href="#" class="sidebar__link">Women</a></li>
+                                <li class="sidebar__list__item"><a href="#" class="sidebar__link">About</a></li>
+                                <li class="sidebar__list__item"><a href="#" class="sidebar__link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo" src="./images/logo.svg" alt="logo">
+                <ul class="navbar__list">
+                    <li class="navbar__list__item"><a class="navbar__link" href="#">Collections</a></li>
+                    <li class="navbar__list__item"><a class="navbar__link" href="#">Men</a></li>
+                    <li class="navbar__list__item"><a class="navbar__link" href="#">Women</a></li>
+                    <li class="navbar__list__item"><a class="navbar__link" href="#">About</a></li>
+                    <li class="navbar__list__item"><a class="navbar__link" href="#">Contact</a></li>
+                </ul>
+           </div>
+            <div class="navbar__cart__section">
+                <div class="cart--dropdown">
+                    <p class="purchase--indicator">0</p>
+                    <img class="navbar__cart__img" src="./images/icon-cart.svg" alt="cart">
+                    <div class="dropdown show">
+                        <p class="dropdown-title">Cart</p>
+                        <div class="details">
+                            Your cart is empty
+                        </div>
+                    </div>
+                </div>
+                <a href="/"><img class="navbar__cart__person" src="./images/image-avatar.png" alt=""></a>
+            </div>
+        </nav>
+    </div>
+   
+
+   <div class="container">
+       <div class="main--section">
+            <div class="img--area">
+                <div class="large--img--div">
+                    <img class="large--img" src="./images/image-product-1.jpg" alt="image">
+                    <!-- <i class="fa-solid fa-circle-arrow-left arrow-left"></i>
+                    <i class="fa-solid fa-circle-arrow-right arrow-right"></i> -->
+                </div>
+                <div class="small--img__navigation">
+                    <!-- <div> -->
+                        <a href="#y"><img  class="small--img" id="./images/image-product-1.jpg" src="./images/image-product-1-thumbnail.jpg" alt="product"></a>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <a href="#t"><img class="small--img" id="./images/image-product-2.jpg" src="./images/image-product-2-thumbnail.jpg" alt="product"></a>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <a href="#r"><img class="small--img" id="./images/image-product-3.jpg" src="./images/image-product-3-thumbnail.jpg" alt="product"></a>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <a href="#e"><img class="small--img" id="./images/image-product-4.jpg" src="./images/image-product-4-thumbnail.jpg" alt="product"></a>
+                    <!-- </div> -->
+                </div>
+            </div>
+
+            <div class="details--section">
+                <p class="details--intro__text">
+                Sneaker Company
+                </p>
+                <h1 class="detail--section__title">Fall Limited Edition<br>Sneakers</h1>
+                <p>
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.
+                </p>
+                <div class="pricing--section">
+                   <div class="pricing">
+                        <h3 class="details__primary--price">$125.00</h3>
+                        <p class="details__secondary--price">50%</p>
+                   </div>
+                   <p class="slashed--price">$250.00</p>
+                </div>
+                <div class="add--cart">
+                    <div class="increase--decrease">
+                        <button class="minus">-</button>
+                        <div><p class="number-of-items">0</p></div>
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fa-solid fa-cart-shopping add-to-cart__icon"></i>
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+       </div> 
+   </div>
+
+   <div class="popup-wrapper hide">
+        <div class="popup">
+            <div class="popup-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="large--img--div">
+                <i class="fa-solid fa-angle-left arrow-left"></i>
+                <div class="wrap">
+                    <img class="popup--large--img slide1" src="./images/image-product-1.jpg" alt="image">
+                    <img class="popup--large--img slide2" src="./images/image-product-2.jpg" alt="image">
+                    <img class="popup--large--img slide3" src="./images/image-product-3.jpg" alt="image">
+                    <img class="popup--large--img slide3" src="./images/image-product-4.jpg" alt="image">
+                </div>
+                <i class="fa-solid fa-angle-right arrow-right"></i>
+            </div>
+            <div class="popup--small--img__navigation">
+                <!-- <div> -->
+                    <a href="#y"><img  class="popup--small--img small--img " id="./images/image-product-1.jpg" src="./images/image-product-1-thumbnail.jpg" alt="product"></a>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <a href="#t"><img class="popup--small--img small--img " id="./images/image-product-2.jpg" src="./images/image-product-2-thumbnail.jpg" alt="product"></a>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <a href="#r"><img class="popup--small--img small--img " id="./images/image-product-3.jpg" src="./images/image-product-3-thumbnail.jpg" alt="product"></a>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <a href="#e"><img class="popup--small--img small--img " id="./images/image-product-4.jpg" src="./images/image-product-4-thumbnail.jpg" alt="product"></a>
+                <!-- </div> -->
+            </div>
+        </div>
+   </div>
+
+   <script src="main.js" defer></script>
+</body>
+</html>
